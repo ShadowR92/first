@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Формы</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="form">
+    <h1 class="title">Формы</h1>
+    <form action="/" method="post"><!--форма-->
+        <fieldset> <!--группа контейнер-->
+            <legend>Контактная информация</legend><!--Заголовок-->
+
+
+            <!--Имя-->
+            <div class="form-group">
+                <label for="input_name">Ваше имя</label><!--for ищет id и связываются-->
+                <input class="form-input" type="text" name="name" id="input_name"><!--поле ввода данных-->
+            </div>
+            <!--EMAIL-->
+            <div class="form-group">
+                <input class="form-input" type="email" name="email" placeholder="Ваш email"><!--поле ввода данных-->
+            </div>
+
+            <!--Телефон-->
+            <div class="form-group">
+                <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон"><!--поле ввода данных-->
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Пароль</legend><!--Заголовок-->
+            <!--Пароль-->
+            <div class="form-group">
+                <input class="form-input" type="password" name="password" placeholder="Придумайте пароль">
+                <!--поле ввода данных-->
+            </div>
+        </fieldset>
+
+        <!--Свой текст-->
+        <div class="form-group">
+            <textarea class="form-textarea" name="text" placeholder="О вас" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <!--SELECT-->
+        <div class="form-group">
+            <select name="city" id="">
+                <option value="Рига"></option>
+                <option value="Даугавпилс"></option>
+            </select>
+        </div>
+
+        <!--Радио (пол)-->
+        <div class="form-group">
+            <label for="male">Муж</label>
+            <input type="radio" name="choose_male" id="male">
+
+            <label for="female">Жен</label>
+            <input type="radio" name="choose_male" id="female">
+            <!--name -связывает группу, либо одну нажимаем либо другую-->
+        </div>
+
+
+        <!--Фото-->
+        <div class="form-group">
+            <label for="photo">Фото</label>
+            <input type="file" name="photo" id="photo">
+        </div>
+
+
+        <!--Чекбокс-->
+        <div class="form-group">
+            <input type="checkbox" name="rules_agree" id="rules_agree">
+            <lable for="rules_agree">Прочитал условие и согласен с ними</lable>
+
+        </div>
+
+
+        <!--Кнопки-->
+        <button type="submit">Отправить</button><!--Кнопка отправить-->
+        <button type="reset">Очистить</button><!--Кнопка сброс-->
+        <button type="button">Кнопка</button>
+
+
+    </form>
+</div>
+
+</body>
+</html>

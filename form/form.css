@@ -1,0 +1,29 @@
+.form {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: silver;
+}
+.title {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;/*отступ между формами*/
+}
+.form-input {
+    padding: 5px;/*увеличим окно импута*/
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;/*шрифт*/
+    font-size: 15px;
+    display: block;/*друг под дружкой*/
+}
+
+.form-textarea {
+    width: 200;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;/*шрифт*/
+    font-size: 15px;
+}
