@@ -12,10 +12,10 @@
 
 <div class="form">
     <h1 class="title">Формы</h1>
+    <a class="link" href="#">Ссылка</a>
     <form action="/" method="post"><!--форма-->
-        <fieldset> <!--группа контейнер-->
-            <legend>Контактная информация</legend><!--Заголовок-->
-
+        <div class="form-fieldset">
+            <h3 class="form-title">Контактная информация</h3><!--Заголовок-->
 
             <!--Имя-->
             <div class="form-group">
@@ -31,25 +31,25 @@
             <div class="form-group">
                 <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон"><!--поле ввода данных-->
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset>
-            <legend>Пароль</legend><!--Заголовок-->
+        <div class="form-fieldset">
+            <h3 class="form-title">Пароль</h3>
             <!--Пароль-->
             <div class="form-group">
                 <input class="form-input" type="password" name="password" placeholder="Придумайте пароль">
                 <!--поле ввода данных-->
             </div>
-        </fieldset>
+        </div>
 
         <!--Свой текст-->
         <div class="form-group">
-            <textarea class="form-textarea" name="text" placeholder="О вас" id="" cols="30" rows="10"></textarea>
+            <textarea class="form-textarea" name="text" placeholder="О вас" cols="30" rows="10"></textarea>
         </div>
 
         <!--SELECT-->
         <div class="form-group">
-            <select name="city" id="">
+            <select name="city">
                 <option value="Рига"></option>
                 <option value="Даугавпилс"></option>
             </select>
@@ -75,16 +75,16 @@
 
         <!--Чекбокс-->
         <div class="form-group">
-            <input type="checkbox" name="rules_agree" id="rules_agree">
+            <input type="checkbox" name="rules_agree" id="rules_agree" checked><!--checked атрибут галка по умолчанию-->
             <lable for="rules_agree">Прочитал условие и согласен с ними</lable>
 
         </div>
 
 
         <!--Кнопки-->
-        <button type="submit">Отправить</button><!--Кнопка отправить-->
+        <button class="btn" type="submit">Отправить</button><!--Кнопка отправить-->
         <button type="reset">Очистить</button><!--Кнопка сброс-->
-        <button type="button">Кнопка</button>
+        <button class="btn" type="button" disabled>Кнопка</button><!--просто кнопка-->
 
 
     </form>

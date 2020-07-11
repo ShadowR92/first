@@ -4,19 +4,33 @@
     margin: auto;
     background-color: silver;
 }
+
 .title {
+    font-family: Tahoma sans-serif;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    text-decoration: underline overline; /*подчеркнуть снизу и сверху*/
+
+
 }
 
 .form-group {
-    margin-bottom: 15px;/*отступ между формами*/
+    margin-bottom: 15px; /*отступ между формами*/
 }
+
 .form-input {
-    padding: 5px;/*увеличим окно импута*/
+    padding: 5px; /*увеличим окно импута*/
     border: 1px solid #000;
-    font-family: Arial, sans-serif;/*шрифт*/
+    font-family: Arial, sans-serif; /*шрифт*/
     font-size: 15px;
-    display: block;/*друг под дружкой*/
+    display: block; /*друг под дружкой*/
+}
+
+.form-input:focus { /*при фокусе*/
+    outline: none; /*убрали обводку*/
+    background-color: #78bdff; /*фон синий*/
 }
 
 .form-textarea {
@@ -24,6 +38,74 @@
     height: 150px;
     padding: 5px;
     border: 1px solid #000;
-    font-family: Arial, sans-serif;/*шрифт*/
-    font-size: 15px;
+
+    font: bold italic 15px/1.5 Arial, sans-serif; /*шрифт в одну строчку*/
+
+    outline: 5px solid red; /*обводка не влияет на размер*/
+    outline-offset: 5px; /* отступ от элемента*/
+}
+
+.form-textarea:focus {
+    outline: none; /*убрали обводку*/
+    background-color: #78bdff; /*фон синий*/
+}
+
+.link {
+    color: #405aff;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #7a0b60;
+}
+
+.link:hover {
+    text-decoration: underline; /* при новоде подчеркиваем*/
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #60c30b;
+    color: #fff;
+    border: 1px solid #136613;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #0b803d; /*при наводе фон становится цвета рамки*/
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #0b5103;
+}
+
+.btn:disabled { /*кнопка заблокирована*/
+    background-color: #444;
+    color: #808080;
+    border: 1px solid #444;
+    cursor: not-allowed;
+}
+
+.form-fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    /*в 3 строчки*/
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: red;
+    border-right-color: blue;
+    border-bottom-color: green;
+
+    border-top: 0; /*уберем границу сверху*/
+
+}
+
+.form-title {
+    margin: 0 0 15px;
 }
