@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+
+    background-color: #fff;
+}
+
+
+/*Modal*/
+.modal {
+    width: 500px;
+    height: 300px;
+    padding: 15px;
+
+    background-color: #eee;
+    margin: 20px auto;
+    position: relative;
+}
+.modal-title {
+    margin: 0;
+}
+
+
+.square {
+    width: 50px;
+    height: 50px;
+    position: absolute;/*мы можем двигать топ райт и тд*/
+    background-color: #333;
+    right: -10px;
+    top: -10px;
+    z-index: 2;
+
+
+}
+/*position: relative - не вылетает из потока, а если двигаем, то относительно его базового местоположения*/
+/*position: static - значение по умолчанию*/
+.square.red {
+    background-color: #ff0b12;
+    right: -15px;
+    top: -5px;
+}
+
+.square-fixed {
+    width: 50px;
+    height: 50px;
+    background-color: #3c3add;
+    position: fixed;/*при скроле всегда на экране*/
+
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+/*Можно задавать в %, но тогда нужен margin-top = height/2  и margin-left */
+
+}
