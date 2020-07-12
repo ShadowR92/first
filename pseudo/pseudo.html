@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="pseudo.css">
+    <title>Псевдо</title>
+</head>
+<body>
+<header class="header"> <!--для шапки можно не Див, а Хедер(семантические теги)-->
+    <h1 class="pseudo-title">Псевдоэлементы</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="news.html">Новости</a>
+    <a href="about.html">Об авторе</a>
+</nav>
+
+
+<main class="content"><!--main -основное содержимое-->
+    <section class="pseudo-text"><!--Секция, но должен быть в ней h любой-->
+        <h3>Заголовок</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, provident.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Harum, provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Harum,
+            provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, provident.</p>
+    </section>
+
+    <article class="pseudo-text"><!--Статья, но должен быть в ней h любой-->
+        <h3>Заголовок</h3>
+        <time datetime="21-12-2019 19:00">Вчера</time><!--дата публикации, datetime для роботов-->
+        <p>
+            <figure><!--обертка картинки-->
+                <img src="img/summer.jpg" width="300" alt="">
+                <figcaption>Моя кошка</figcaption><!--текст к картинке-->
+            </figure>
+        </p>
+        <p>Lorem ipsum dolor <mark>sit</mark><!--выделим желтым--> amet, consectetur adipisicing elit. Harum, provident.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Harum, provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Harum,
+            provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, provident.</p>
+    </article><!--записи статьи новости-->
+
+    <aside class="sidebar">
+        Боковая панель сайта
+    </aside>
+
+
+</main>
+<footer class="footer"><!--тег footer-->
+    copyright
+    <address><!--у него курсив шрифт-->
+        <p>Улица, дом</p>
+        <p>+7900555847</p>
+        <p>info@mail.com</p>
+    </address>
+</footer>
+
+</body>
+</html>

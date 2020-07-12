@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+
+    background-color: #fff;
+}
+
+
+
+
+
+.pseudo-title {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+.pseudo-title:before {/*красная*/
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #ee2e4b;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -35px;
+
+
+
+}
+
+.pseudo-title:after {/*синяя*/
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 5px auto;
+
+    background-color: #4174ee;
+
+}
+
+.pseudo-text p:first-letter {/*первая буква*/
+    font-size: 25px;
+}
+
+.pseudo-text p:first-line {/*первая строка*/
+    color: #cc000a;
+}
