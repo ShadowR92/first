@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+
+    background-color: #fff;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;/*для всех элементов убрать все отступы*/
+}
+
+.page {
+    width: 600px;
+    margin: 20px auto;
+}
+
+
+
+.header {
+    padding: 20px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;/*разделить*/
+
+    flex-direction: row;/*горизонтальное выравнивание*/
+    align-items: center;/*вертикальное выравнивание*/
+}
+.header-item {
+    flex-basis: 0;/*изначальная ширина колонки*/
+    flex-grow: 1;/*рост ячейки, равномерное распределение места*/
+}
+.header-tel {
+    order: 1;/*порядковый номер*/
+}
+.header-logo {
+    order: 2;/*порядковый номер*/
+}
+.header-lang {
+    order: 3;/*порядковый номер*/
+}
+
+
+
+
+
+
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;/*flex-basis: 20%;*/
+    padding: 20px;
+
+
+    background-color: #333;
+}
+
+.main {
+    width: 60%;/*flex-basis: 60%;*/
+
+    background-color: #ccc;
+}
+
+
+.footer {
+    background-color: #eee;
+    padding: 20px;
+
+}
