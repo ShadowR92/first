@@ -7,10 +7,11 @@ body {
 
     background-color: #fff;
 }
+
 *,
 *:before,
 *:after {
-    box-sizing: border-box;/*для всех элементов убрать все отступы*/
+    box-sizing: border-box; /*для всех элементов убрать все отступы*/
 }
 
 .page {
@@ -19,34 +20,32 @@ body {
 }
 
 
-
 .header {
     padding: 20px;
     background-color: #eee;
     display: flex;
-    justify-content: space-between;/*разделить*/
+    justify-content: space-between; /*разделить*/
 
-    flex-direction: row;/*горизонтальное выравнивание*/
-    align-items: center;/*вертикальное выравнивание*/
+    flex-direction: row; /*горизонтальное выравнивание*/
+    align-items: center; /*вертикальное выравнивание*/
 }
+
 .header-item {
-    flex-basis: 0;/*изначальная ширина колонки*/
-    flex-grow: 1;/*рост ячейки, равномерное распределение места*/
+    flex-basis: 0; /*изначальная ширина колонки*/
+    flex-grow: 1; /*рост ячейки, равномерное распределение места*/
 }
+
 .header-tel {
-    order: 1;/*порядковый номер*/
+    order: 1; /*порядковый номер*/
 }
+
 .header-logo {
-    order: 2;/*порядковый номер*/
+    order: 2; /*порядковый номер*/
 }
+
 .header-lang {
-    order: 3;/*порядковый номер*/
+    order: 3; /*порядковый номер*/
 }
-
-
-
-
-
 
 
 .content {
@@ -54,7 +53,7 @@ body {
 }
 
 .sidebar {
-    width: 20%;/*flex-basis: 20%;*/
+    width: 20%; /*flex-basis: 20%;*/
     padding: 20px;
 
 
@@ -62,7 +61,7 @@ body {
 }
 
 .main {
-    width: 60%;/*flex-basis: 60%;*/
+    width: 60%; /*flex-basis: 60%;*/
 
     background-color: #ccc;
 }

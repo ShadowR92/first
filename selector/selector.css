@@ -1,0 +1,80 @@
+.body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.text {
+    margin-bottom: 40px;
+
+}
+
+.text > p { /*покрасить только прямых потомков в классе .text*/
+    color: red;
+}
+
+
+.text > p:first-of-type { /*покрасить первый элемент по типу p- найдет первый p*/
+    color: red;
+}
+
+.text span {
+    background-color: #eee;
+}
+
+.text span[title] {/*спан с атрибутом title*/
+    text-decoration: underline;
+}
+
+
+
+.list {
+    margin-bottom: 40px;
+}
+.list li:first-child {/*красим только 1й элемент*/
+    color: blue;
+}
+.list li:last-child {/*красим только последний элемент*/
+    color: green;
+}
+.list li:nth-child(2) {/*красим только 2й элемент*/
+    color: red;
+}
+
+.list li:nth-child(odd) {/*красим все нечетные элемент*/
+    color: greenyellow;
+}
+
+.list li:nth-child(even) {/*красим все четные элемент*/
+    color: #9f7eff;
+}
+
+
+
+.table {
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.table tbody tr:nth-child(even) {/*четные строки*/
+    background-color: #ccc;
+
+}
+
+.label {
+    color: #ccc;
+}
+
+.checkbox:checked + label {/*при галочке чекбокса наш лейбл - ...*/
+    color: #000;
+}

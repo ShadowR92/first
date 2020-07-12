@@ -37,9 +37,9 @@
     width: 200px;
     padding: 5px;
     border: 1px solid #000;
-    resize: vertical;/*растягивание окна можно по вертикали*/
-    min-height: 150px;/*растягиваем минимум 200px*/
-    max-height: 250px;/*максимум растянется на 250*/
+    resize: vertical; /*растягивание окна можно по вертикали*/
+    min-height: 150px; /*растягиваем минимум 200px*/
+    max-height: 250px; /*максимум растянется на 250*/
 
     font: bold italic 15px/1.5 Arial, sans-serif; /*шрифт в одну строчку*/
 
@@ -71,7 +71,7 @@
     color: #fff;
     border: 1px solid #136613;
 
-    transition: background 0.2s linear, border-color 0.2s linear;/*плавное изменение задается объекту*/
+    transition: background 0.2s linear, border-color 0.2s linear; /*плавное изменение задается объекту*/
 }
 
 .btn:focus {
@@ -82,7 +82,7 @@
 .btn:focus {
     background-color: #0b803d; /*при наводе фон становится цвета рамки*/
     cursor: pointer;
-    border-color: #0b6532;/*цвет рамки*/
+    border-color: #0b6532; /*цвет рамки*/
 }
 
 .btn:active {

@@ -9,7 +9,7 @@ body {
     margin: 20px auto;
     position: relative;
     background-color: #fff;
-    overflow: hidden;/*скрыть все, что вылезает из контейнера*/
+    overflow: hidden; /*скрыть все, что вылезает из контейнера*/
 }
 
 .road {
@@ -26,6 +26,7 @@ body {
     z-index: 3;
 
 }
+
 .tree {
     position: absolute;
     right: 50px;

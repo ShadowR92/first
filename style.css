@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    line-height: 1.5;/*1.5*15=22.5px*/
+    line-height: 1.5; /*1.5*15=22.5px*/
     color: #121212;
     background: url("img/bg.jpg");
 }
@@ -10,8 +10,9 @@ body {
 *,
 *:before,
 *:after {
-    box-sizing: border-box;/*для всех элементов убрать все отступы*/
+    box-sizing: border-box; /*для всех элементов убрать все отступы*/
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -22,13 +23,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px auto;
     background-color: #fff;
 }
+
 .container {
     display: flex;
 }
 
-.img {/*картинка*/
+.img { /*картинка*/
     display: block;
-    max-width: 100%;/*максим ширина картинки 100% содержимого*/
+    max-width: 100%; /*максим ширина картинки 100% содержимого*/
     height: auto;
     margin-bottom: 20px;
 }
@@ -39,41 +41,44 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     background-color: #121212;
 }
+
 .header-title {
     margin: 0;
     font-size: 24px;
     color: #fff;
     text-align: center;
 }
+
 .header-subtitle {
     margin: 0;
     font-size: 16px;
     color: #738af5;
     text-align: center;
-    font-weight: 400;/*не жирный*/
+    font-weight: 400; /*не жирный*/
 }
 
 /*Nav*/
 .nav {
-    text-align: center;/*блок с сылками по центру*/
+    text-align: center; /*блок с сылками по центру*/
     display: flex;
     justify-content: center;
 }
 
-.nav-link {/*наши ссылки*/
+.nav-link { /*наши ссылки*/
 
     padding: 8px 12px;
-    text-decoration: none;/*уберем подчеркивание*/
+    text-decoration: none; /*уберем подчеркивание*/
     color: #121212;
 
     transition: background-color 0.2s linear;
 }
-.nav-link:hover {/*при наводе*/
-    background-color: #eee;/*фон серый*/
+
+.nav-link:hover { /*при наводе*/
+    background-color: #eee; /*фон серый*/
 }
 
 /*Content*/
-.intro-img {/*наша картинка лого*/
+.intro-img { /*наша картинка лого*/
     border-radius: 10px;
     box-shadow: 0 3px 5px #ee1818;
     background-color: #222;
@@ -81,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
     transition: opacity 0.2s linear;
 }
+
 .intro-img:hover {
     opacity: 1;
 }
@@ -91,22 +97,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 .content-title {
     margin: 0 0 15px;
     font-size: 24px;
     color: red;
 }
+
 .content-text {
     margin-bottom: 20px;
 }
+
 .read-more {
     color: blue;
     text-decoration: none;
 }
+
 .read-more:hover {
     text-decoration: underline;
 }
+
 /*Sidebar*/
 .sidebar {
     width: 200px;
@@ -114,17 +123,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #eee;
 }
 
-.sidebar-title {/*заголовок сайтбара*/
+.sidebar-title { /*заголовок сайтбара*/
     margin-bottom: 20px;
     font-size: 16px;
     color: #ee0024;
 }
 
-.sidebar-img {/* класс у картинки*/
+.sidebar-img { /* класс у картинки*/
     background: linear-gradient(to top, #fff, #eee);
 
 }
-.sidebar-text {/*текст сайдбара*/
+
+.sidebar-text { /*текст сайдбара*/
     font-size: 12px;
 }
 
@@ -135,23 +145,28 @@ h1, h2, h3, h4, h5, h6 {
     color: blue;
     margin: 0 0 5px;
 }
+
 .article-data {
     display: block;
     font-size: 12px;
     color: #ccc;
 }
+
 .article {
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
 }
+
 .article-title a {
-    color: inherit;/*наследовать цвет заголовка*/
+    color: inherit; /*наследовать цвет заголовка*/
     text-decoration: none;
 }
+
 .article-title a:hover {
     text-decoration: underline;
 }
+
 /*Footer*/
 .footer {
     padding: 20px;

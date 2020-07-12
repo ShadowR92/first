@@ -7,10 +7,11 @@ body {
 
     background-color: #fff;
 }
+
 *,
 *:before,
 *:after {
-    box-sizing: border-box;/*для всех элементов убрать все отступы*/
+    box-sizing: border-box; /*для всех элементов убрать все отступы*/
 }
 
 .element {
@@ -19,14 +20,14 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: #ccc;
-   /*border-radius: 20% 20% 30% 40% / 30% 30% 40% 50%;*/
+    /*border-radius: 20% 20% 30% 40% / 30% 30% 40% 50%;*/
     border-radius: 20px;
-    box-shadow: -5px 5px 5px #858585 inset, 10px 5px 20px #858585;/*x y размытие*/
-    opacity: 0.5;/*непрозрачность от 0 до 1*/
+    box-shadow: -5px 5px 5px #858585 inset, 10px 5px 20px #858585; /*x y размытие*/
+    opacity: 0.5; /*непрозрачность от 0 до 1*/
 
 }
 
 .element-title {
     margin: 0;
-    text-shadow: 2px 2px 5px #1d8520;/*тень для текста*/
+    text-shadow: 2px 2px 5px #1d8520; /*тень для текста*/
 }

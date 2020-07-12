@@ -9,16 +9,14 @@ body {
 }
 
 
-
-
-
 .pseudo-title {
     margin: 0;
     text-align: center;
     font-size: 30px;
     position: relative;
 }
-.pseudo-title:before {/*красная*/
+
+.pseudo-title:before { /*красная*/
     content: "";
     display: block;
     width: 70px;
@@ -30,10 +28,9 @@ body {
     margin-left: -35px;
 
 
-
 }
 
-.pseudo-title:after {/*синяя*/
+.pseudo-title:after { /*синяя*/
     content: "";
     display: block;
     width: 70px;
@@ -44,10 +41,10 @@ body {
 
 }
 
-.pseudo-text p:first-letter {/*первая буква*/
+.pseudo-text p:first-letter { /*первая буква*/
     font-size: 25px;
 }
 
-.pseudo-text p:first-line {/*первая строка*/
+.pseudo-text p:first-line { /*первая строка*/
     color: #cc000a;
 }

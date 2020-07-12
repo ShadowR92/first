@@ -29,7 +29,6 @@ body {
 }
 
 
-
 .input {
     display: block;
     padding: 8px 10px;
@@ -79,6 +78,7 @@ body {
     font-size: 15px;
     color: #fff;
 }
+
 .btn:focus {
     outline: 0;
 }
