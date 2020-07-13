@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5; /*1.5*15=22.5px*/
+    color: #121212;
+    background: url("img/bg.jpg");
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box; /*для всех элементов убрать все отступы*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;/*tckb 'rhfy vtymit 800px то будет адаптация*/
+    padding: 1rem;
+    margin: 20px auto;
+
+    background-color: #eee;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;/*разрешаем прыгать на нов строку*/
+}
+
+.flex-item {
+    height: 100px;
+    flex-grow: 1;/*разрешить растянуться до конца контейнера*/
+    flex-basis: 0;
+}
+
+.red {
+    background-color: #e03333;
+}
+
+.green {
+    background-color: #84b10d;
+}
+
+.blue {
+    background-color: #0d59d3;
+}
+
+.title {
+    margin: 0 0 1rem;
+
+    font-size: 2rem;
+    color: #121212;
+}
+
+
+/*Media*/
+/*пишется ниже, чтобы сработало и сначала больший потом меньший*/
+@media (max-width: 800px) {  /*если ширина нашего экрана 800px или меньше*/
+    .flex-item {
+        flex-basis: 50%;
+    }
+
+
+
+
+
+@media (max-width: 600px) {  /*если ширина нашего экрана 600px или меньше*/
+    .flex-item {
+        flex-basis: 100%;/*на весь экран каждый блок*/
+    }
+
+    .red {
+        order: 1; /* будет 1й*/
+    }
+
+    .blue {
+        order: 2; /* будет 2й*/
+    }
+
+    .green {
+        order: 3; /* будет 3й*/
+    }
+}
+
+@media (max-height: 350px) and (orientation: landscape){/*если высота экрана 440px */
+    .flex-item {
+        height: 200px;
+    }
+
+}
+
+
+
+
+
+
+

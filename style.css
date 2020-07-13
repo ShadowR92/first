@@ -19,7 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .page {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 20px auto;
     background-color: #fff;
 }
@@ -59,6 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Nav*/
 .nav {
+    flex-wrap: wrap;
+    
     text-align: center; /*блок с сылками по центру*/
     display: flex;
     justify-content: center;

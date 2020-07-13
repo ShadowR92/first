@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: Arial sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+
+    background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box; /*для всех элементов убрать все отступы*/
+}
